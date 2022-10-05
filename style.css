@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fundo-branco {
+    height: 100vh;
+    background-color: #EEEEEE;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundo-azul {
+    background: linear-gradient(180deg, #2F80ED 0%, #05B2DC 100%);
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundo-ciano {
+    background: linear-gradient(180deg, #31819A 0%, #12DBAA 100%);
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundo-verde {
+    background: linear-gradient(180deg, #11998E 0%, #48AD72 100%);
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundo-roxo {
+    background: linear-gradient(180deg, #3F5EFB 0%, #6153CC 100%);
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bola-1 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    margin-left: 18rem;
+    background: #05B2DC;
+}
+
+.bola-2 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    margin-left: -18rem;
+    background: #48AD72;
+}
+
+.bola-3 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background: #A60067;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.bola-3 h1 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #EEEEEE;
+    margin-left: 1rem;
+}
+
+.bola-4 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    margin-left: 18rem;
+    background: #6153CC;
+}
+
+.bola-5 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    margin-left: -18rem;
+    background: #12DBAA;
+}
+
+/* index2 */
+main h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #A60067;
+}
+
+.jogos-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos-botoes button {
+    width: 18rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #EEEEEE;
+}
+
+#jogo-1 {
+    background: #05B2DC;
+}
+
+#jogo-2 {
+    background: #12DBAA;
+}
+
+#jogo-3 {
+    background: #48AD72;
+}
+
+#jogo-4 {
+    background: #6153CC;
+}
+
+main footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #A60067;
+}
+
+main footer p {
+    margin: 0.5rem;
+}
+
+/*  */
+
+/* index3 */
+.pergunta {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #EEEEEE;
+}
+
+.circulo-numero,
+.circulo-numero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 0.25rem solid #EEEEEE;
+    border-radius: 100%;
+}
+
+.circulo-numero p,
+.circulo-numero2 p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #EEEEEE;
+}
+
+main input {
+    width: 10.5rem;
+    height: 11.25rem;
+    background: #EEEEEE;
+    box-shadow: 0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+    color: #05B2DC;
+}
+
+.numero-user button {
+    width: 7rem;
+    height: 3rem;
+    background: #EEEEEE;
+    box-shadow: 0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #05B2DC;
+}
+
+.tentativas {
+    display: flex;
+}
+
+.tentativa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: #EEEEEE;
+    margin: 0.5rem;
+}
+
+.botao-voltar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 7.5rem;
+    height: 3rem;
+    border: 0.25rem solid #EEEEEE;
+    border-radius: 1.5rem;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #EEEEEE;
+}
+
+/*  */
+
+/* index4 */
+#texto-final {
+    font-size: 2.25rem;
+    margin-top: 7rem;
+    color: #EEEEEE;
+}
+
+#acertos {
+    font-weight: 900;
+    font-size: 8rem;
+    color: #EEEEEE;
+}
+
+.footer-final {
+    background-color: #EEEEEE;
+    margin-top: 5rem;
+    width: 70vw;
+    border-radius: 2rem;
+}
+
+.numeroUsuarioJogo2 {
+    color: #3BBDB4;
+}
+
+/*  */
+
+/* index5 */
+.fundo-verde h1 {
+    margin-top: 3rem;
+}
+
+.entre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.entre input {
+    border-radius: 100%;
+    height: 9rem;
+    width: 9rem;
+    color: #1F9E87;
+    font-size: 5rem;
+}
+
+.botao-confirmar {
+    width: 7rem;
+    height: 3rem;
+    background: #EEEEEE;
+    box-shadow: 0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #1F9E87;
+}
+
+/*  */
+
+/* index6 */
+.numero-user2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numero-novo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-roxo .numero-user2 input {
+    width: 8rem;
+    height: 4rem;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 4rem;
+    color: #EEEEEE;
+}
+
+.linha {
+    width: 3rem;
+    height: 0rem;
+    border: 0.5rem solid #EEEEEE;
+    border-radius: 2rem;
+}
+
+.numero-user2 .botao-confirmar {
+    color: #5657DC;
+}
+
+/*  */
