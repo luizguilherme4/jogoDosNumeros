@@ -114,7 +114,6 @@ main {
     background: #12DBAA;
 }
 
-/* index2 */
 main h1 {
     font-family: 'Nunito';
     font-style: normal;
@@ -173,9 +172,7 @@ main footer p {
     margin: 0.5rem;
 }
 
-/*  */
 
-/* index3 */
 .pergunta {
     font-family: 'Nunito';
     font-style: normal;
@@ -218,6 +215,14 @@ main input {
     font-weight: 900;
     font-size: 6rem;
     color: #05B2DC;
+}
+
+.numero-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .numero-user button {
@@ -267,9 +272,7 @@ main input {
     color: #EEEEEE;
 }
 
-/*  */
 
-/* index4 */
 #texto-final {
     font-size: 2.25rem;
     margin-top: 7rem;
@@ -284,8 +287,8 @@ main input {
 
 .footer-final {
     background-color: #EEEEEE;
-    margin-top: 5rem;
-    width: 70vw;
+    margin-top: 3rem;
+    width: 20vw;
     border-radius: 2rem;
 }
 
@@ -293,9 +296,7 @@ main input {
     color: #3BBDB4;
 }
 
-/*  */
 
-/* index5 */
 .fundo-verde h1 {
     margin-top: 3rem;
 }
@@ -330,13 +331,13 @@ main input {
     color: #1F9E87;
 }
 
-/*  */
 
-/* index6 */
 .numero-user2 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .numero-novo {
@@ -373,4 +374,19 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
 }
 
-/*  */
+button:hover {
+    cursor: pointer;
+    filter: opacity(0.9);
+    box-shadow: 0rem 0.5rem 0.25rem rgba(141, 141, 141, 0.5);
+}
+
+@media (max-width: 1023px) {
+    main {
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .footer-final {
+        width: 70vw;
+    }
+}

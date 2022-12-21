@@ -1,9 +1,8 @@
-var delayInMilliseconds = 2000;
+var delayInMilliseconds = 1000;
 var main = document.querySelector("main");
 var body = document.querySelector("body");
 var acertos = 0;
 
-// mostra o menu de jogos depois de um delay
 setTimeout(function delay() {
     main.innerHTML = `
     <h1>Escolha um jogo</h1>
@@ -15,12 +14,11 @@ setTimeout(function delay() {
     </div>
     <footer>
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>`
 }, delayInMilliseconds);
 
-//volta ao menu de jogos após clicar no botão "menu"
 function voltar() {
     acertos = 0;
 
@@ -36,13 +34,12 @@ function voltar() {
     </div>
     <footer>
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>
 </main>`
 }
 
-// muda o número aleatório e printa na tela
 function mudaNumeroAleatorio() {
     numeroAleatorio = parseInt((Math.random() * 11) + 1)
 
@@ -50,7 +47,6 @@ function mudaNumeroAleatorio() {
     circuloNumero.innerHTML = `<p>${numeroAleatorio}</p>`
 }
 
-// mostra a primeira tela do jogo 1
 function jogo1() {
     numeroAleatorio = parseInt(Math.random() * 11)
 
@@ -73,25 +69,23 @@ function jogo1() {
     </div>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 </main>`
 }
 
-// faz a lógica do jogo 1 e chama a função mudaNumeroAleatorio() ao clicar no botão "confirmar "
 function confirmarNumero() {
     numeroUser = (document.querySelector(".numeroUsuario").value);
     tentativa01 = document.querySelector("#tentativa-1");
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa01.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa01.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa01.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa01.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -106,13 +100,12 @@ function confirmarNumero2() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa02.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa02.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa02.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa02.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -127,13 +120,12 @@ function confirmarNumero3() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa03.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa03.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa03.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa03.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -148,13 +140,12 @@ function confirmarNumero4() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa04.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa04.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa04.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa04.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -164,19 +155,18 @@ function confirmarNumero4() {
     <h1 id="acertos">${acertos}/4</h1>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 
     <footer class="footer-final">
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>
 </main>`
 }
 
-// mostra a primeira tela do jogo 2
 function jogo2() {
     numeroAleatorio = parseInt((Math.random() * 11) + 1)
 
@@ -199,25 +189,23 @@ function jogo2() {
     </div>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 </main>`
 }
 
-// faz a lógica do jogo 2 e chama a função mudaNumeroAleatorio() ao clicar no botão "confirmar "
 function confirmarNumeroJogo2() {
     numeroUser = (document.querySelector(".numeroUsuario").value);
     tentativa01 = document.querySelector("#tentativa-1");
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (--numeroAleatorio == numeroUser) {
-        tentativa01.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa01.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa01.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa01.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -232,13 +220,12 @@ function confirmarNumero2Jogo2() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (--numeroAleatorio == numeroUser) {
-        tentativa02.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa02.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa02.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa02.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -253,13 +240,12 @@ function confirmarNumero3Jogo2() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (--numeroAleatorio == numeroUser) {
-        tentativa03.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa03.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa03.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa03.innerHTML = `<img src= "img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -274,13 +260,12 @@ function confirmarNumero4Jogo2() {
     botaoConfirmar = document.querySelector(".numero-user");
 
     if (--numeroAleatorio == numeroUser) {
-        tentativa04.innerHTML = `<img src="certoIcon.svg">`;
+        tentativa04.innerHTML = `<img src="img/certoIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
 
     }
     else {
-        tentativa04.innerHTML = `<img src= "erraddoIcon.svg">`
+        tentativa04.innerHTML = `<img src="img/erraddoIcon.svg">`
     }
 
     mudaNumeroAleatorio();
@@ -290,19 +275,18 @@ function confirmarNumero4Jogo2() {
     <h1 id="acertos">${acertos}/4</h1>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 
     <footer class="footer-final">
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>
 </main>`
 }
 
-// muda o número aleatório do jogo 3 e printa na tela
 function mudaNumeroAleatorioJogo3() {
     numeroAleatorio = parseInt((Math.random() * 11) + 1)
 
@@ -313,7 +297,6 @@ function mudaNumeroAleatorioJogo3() {
     circuloNumero2.innerHTML = `<p>${numeroAleatorio + 2}</p>`
 }
 
-// mostra a primeira tela do jogo 3
 function jogo3() {
     numeroAleatorio = parseInt(Math.random() * 11)
 
@@ -344,13 +327,12 @@ function jogo3() {
     </div>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 </main>`
 }
 
-// faz a lógica do jogo 3 e chama a função mudaNumeroAleatorio() ao clicar no botão "confirmar "
 function confirmarNumeroJogo3() {
     numeroUser = (document.querySelector(".numero-user").value);
     tentativa01 = document.querySelector("#tentativa-1");
@@ -358,12 +340,11 @@ function confirmarNumeroJogo3() {
     input = document.querySelector(".input-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa01.innerHTML = `<img src="certoVerdeIcon.svg">`;
+        tentativa01.innerHTML = `<img src="img/certoVerdeIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa01.innerHTML = `<img src="erradoVerdeIcon.svg">`;
+        tentativa01.innerHTML = `<img src="img/erradoVerdeIcon.svg">`;
     }
 
     mudaNumeroAleatorioJogo3();
@@ -379,12 +360,11 @@ function confirmarNumero2Jogo3() {
     input = document.querySelector(".input-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa02.innerHTML = `<img src="certoVerdeIcon.svg">`;
+        tentativa02.innerHTML = `<img src="img/certoVerdeIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa02.innerHTML = `<img src="erradoVerdeIcon.svg">`;
+        tentativa02.innerHTML = `<img src="img/erradoVerdeIcon.svg">`;
     }
 
     mudaNumeroAleatorioJogo3();
@@ -400,12 +380,11 @@ function confirmarNumero3Jogo3() {
     input = document.querySelector(".input-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa03.innerHTML = `<img src="certoVerdeIcon.svg">`;
+        tentativa03.innerHTML = `<img src="img/certoVerdeIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa03.innerHTML = `<img src="erradoVerdeIcon.svg">`;
+        tentativa03.innerHTML = `<img src="img/erradoVerdeIcon.svg">`;
     }
 
     mudaNumeroAleatorioJogo3();
@@ -421,12 +400,11 @@ function confirmarNumero4Jogo3() {
     input = document.querySelector(".input-user");
 
     if (++numeroAleatorio == numeroUser) {
-        tentativa04.innerHTML = `<img src="certoVerdeIcon.svg">`;
+        tentativa04.innerHTML = `<img src="img/certoVerdeIcon.svg">`;
         acertos++;
-        console.log("numero de acertos: " + acertos);
     }
     else {
-        tentativa04.innerHTML = `<img src="erradoVerdeIcon.svg">`;
+        tentativa04.innerHTML = `<img src="img/erradoVerdeIcon.svg">`;
     }
 
     mudaNumeroAleatorioJogo3();
@@ -436,28 +414,26 @@ function confirmarNumero4Jogo3() {
     <h1 id="acertos">${acertos}/4</h1>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 
     <footer class="footer-final">
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>
 </main>`
 }
 
-// muda o número aleatório do jogo 4 e printa na tela
 function mudaNumeroAleatorioJogo4() {
     imgRandom = ["num1.svg", "num2.svg", "num3.svg", "num4.svg", "num5.svg"];
     randomImg = imgRandom[parseInt(Math.random() * 5)];
 
     entre = document.querySelector(".entre");
-    entre.innerHTML = `<img src="${randomImg}">`;
+    entre.innerHTML = `<img src="img/${randomImg}">`;
 }
 
-// mostra a primeira tela do jogo 4
 function jogo4() {
     imgRandom = ["num1.svg", "num2.svg", "num3.svg", "num4.svg", "num5.svg"];
     randomImg = imgRandom[parseInt(Math.random() * 5)];
@@ -465,7 +441,7 @@ function jogo4() {
     body.innerHTML = `<main class="fundo-roxo">
     <h1 class="pergunta">Há quantas bolinhas?</h1>
     <div class="entre">
-        <img src="${randomImg}">
+        <img src="img/${randomImg}">
     </div>
     <div class="numero-user2">
         <div class="numero-novo">
@@ -473,7 +449,7 @@ function jogo4() {
             <div class="linha"></div>
         </div>
         <div class="confirmar-novo">
-          <button class="botao-confirmar" onclick="confirmarNumeroJogo4()">Confirmar</button>
+            <button class="botao-confirmar" onclick="confirmarNumeroJogo4()">Confirmar</button>
         </div>
     </div>
 
@@ -485,13 +461,12 @@ function jogo4() {
     </div>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 </main>`
 }
 
-// faz a lógica do jogo 4 e chama a função mudaNumeroAleatorioJogo4() ao clicar no botão "confirmar "
 function confirmarNumeroJogo4() {
     numeroUser = (document.querySelector(".numero-user").value);
     tentativa01 = document.querySelector("#tentativa-1");
@@ -501,51 +476,51 @@ function confirmarNumeroJogo4() {
     switch (randomImg) {
         case "num1.svg":
             if (numeroUser == 1) {
-                tentativa01.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa01.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num2.svg":
             if (numeroUser == 2) {
-                tentativa01.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa01.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num3.svg":
             if (numeroUser == 3) {
-                tentativa01.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa01.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num4.svg":
             if (numeroUser == 4) {
-                tentativa01.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa01.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num5.svg":
             if (numeroUser == 5) {
-                tentativa01.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa01.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa01.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
     }
@@ -566,51 +541,51 @@ function confirmarNumero2Jogo4() {
     switch (randomImg) {
         case "num1.svg":
             if (numeroUser == 1) {
-                tentativa02.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa02.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num2.svg":
             if (numeroUser == 2) {
-                tentativa02.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa02.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num3.svg":
             if (numeroUser == 3) {
-                tentativa02.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa02.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num4.svg":
             if (numeroUser == 4) {
-                tentativa02.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa02.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num5.svg":
             if (numeroUser == 5) {
-                tentativa02.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa02.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa02.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
     }
@@ -631,51 +606,51 @@ function confirmarNumero3Jogo4() {
     switch (randomImg) {
         case "num1.svg":
             if (numeroUser == 1) {
-                tentativa03.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa03.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num2.svg":
             if (numeroUser == 2) {
-                tentativa03.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa03.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num3.svg":
             if (numeroUser == 3) {
-                tentativa03.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa03.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num4.svg":
             if (numeroUser == 4) {
-                tentativa03.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa03.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num5.svg":
             if (numeroUser == 5) {
-                tentativa03.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa03.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa03.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
     }
@@ -696,51 +671,51 @@ function confirmarNumero4Jogo4() {
     switch (randomImg) {
         case "num1.svg":
             if (numeroUser == 1) {
-                tentativa04.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa04.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num2.svg":
             if (numeroUser == 2) {
-                tentativa04.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa04.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num3.svg":
             if (numeroUser == 3) {
-                tentativa04.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa04.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num4.svg":
             if (numeroUser == 4) {
-                tentativa04.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa04.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
 
         case "num5.svg":
             if (numeroUser == 5) {
-                tentativa04.innerHTML = `<img src="certoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/certoRoxoIcon.svg">`;
                 acertos++;
             }
             else {
-                tentativa04.innerHTML = `<img src="erradoRoxoIcon.svg">`;
+                tentativa04.innerHTML = `<img src="img/erradoRoxoIcon.svg">`;
             }
             break;
     }
@@ -752,13 +727,13 @@ function confirmarNumero4Jogo4() {
     <h1 id="acertos">${acertos}/4</h1>
 
     <button class="botao-voltar" onclick="voltar()">
-        <img src="setaIcon.svg">
+        <img src="img/setaIcon.svg">
         <p>Menu</p>
     </button>
 
     <footer class="footer-final">
         <p>feito com</p>
-        <img src="coracaoIcon.svg">
+        <img src="img/coracaoIcon.svg">
         <p>por Luiz</p>
     </footer>
 </main>`
